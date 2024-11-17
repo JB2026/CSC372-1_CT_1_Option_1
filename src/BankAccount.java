@@ -65,6 +65,7 @@ public class BankAccount {
 	
 	// A method to deposit the passed in amount into the account.
 	public void deposit(double depositAmount) {
+		// If the deposit amount is negative, inform the user and do not update balance.
 		if (depositAmount < 0) {
 			System.out.println("The deposit amount was negative, no funds were added. Please try again.\n");
 			return;
@@ -75,6 +76,7 @@ public class BankAccount {
 	
 	// A method to withdraw the passed in amount from the account.
 	public void withdrawal(double withdrawalAmount) {
+		// If the withdrawal amount is negative, inform the user and do not update balance.
 		if (withdrawalAmount < 0) {
 			System.out.println("The withdrawal amount was negative, no funds were removed. Please try again.\n");
 			return;
