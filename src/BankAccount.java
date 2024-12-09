@@ -1,5 +1,5 @@
-// A class that represents a bank account and it's basic functionality.
-public class BankAccount {
+// An abstract class that represents a bank account and it's basic functionality.
+public abstract class BankAccount {
 	// Class properties
 	private String firstName;
 	private String lastName;
@@ -13,6 +13,9 @@ public class BankAccount {
 		this.accountID = -1;
 		this.balance = 0.0;
 	}
+	
+	// A method required by all subclasses to set an interest rate.
+	abstract void setInterestRate(double rate);
 	
 	// A method to set the first name on the bank account.
 	public void setFirstName(String firstName) {
